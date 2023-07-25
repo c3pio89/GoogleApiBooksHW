@@ -1,0 +1,39 @@
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.book-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.book-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Стили для случая, когда нет книг в выбранной категории */
+.no-books {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  margin-top: 20px;
+}
