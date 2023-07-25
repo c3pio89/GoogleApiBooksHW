@@ -9,7 +9,7 @@ const Slider = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=AIzaSyALKcehJllkGUfb9vZktKAJTV8HkD9fskw&printType=books&startIndex=0&maxResults=3&langRestrict=en');
+        const response = await axios.get('https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=***********&printType=books&startIndex=0&maxResults=3&langRestrict=en');
         setBooks(response.data.items);
       } catch (error) {
         console.error(error);
